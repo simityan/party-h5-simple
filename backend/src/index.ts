@@ -7,19 +7,32 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // 中间件
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || '*',
+}));
 app.use(express.json());
+
+// 反向代理支持：确保 req.ip 返回真实客户端IP
+app.set('trust proxy', 1);
 
 // IP提取中间件 — 从请求中获取客户端真实IP
 // 支持反向代理场景（X-Forwarded-For / X-Real-IP）
 app.use((req, _res, next) => {
-  const forwarded = req.headers['x-forwarded-for'];
-  if (typeof forwarded === 'string') {
-    req.clientIp = forwarded.split(',')[0].trim();
-  } else if (req.headers['x-real-ip']) {
-    req.clientIp = req.headers['x-real-ip'] as string;
+  // IP提取优先级：X-Real-IP > X-Forwarded-For 最后一跳 > req.ip > socket
+  // X-Real-IP 由 Nginx 设置（proxy_set_header X-Real-IP $remote_addr），不可被客户端伪造
+  // X-Forwarded-For 取最后一跳（最靠近可信代理添加的），避免客户端伪造前面的值
+  const realIp = req.headers['x-real-ip'];
+  if (typeof realIp === 'string' && realIp) {
+    req.clientIp = realIp.trim();
   } else {
-    req.clientIp = req.ip || req.socket.remoteAddress || 'unknown';
+    const forwarded = req.headers['x-forwarded-for'];
+    if (typeof forwarded === 'string' && forwarded) {
+      // 多级代理时取第一个（最原始的客户端IP）
+      // 注意：如果前面有CDN，可能需要取最后一个；根据部署架构调整
+      req.clientIp = forwarded.split(',')[0].trim();
+    } else {
+      req.clientIp = req.ip || req.socket.remoteAddress || 'unknown';
+    }
   }
   next();
 });

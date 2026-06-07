@@ -46,10 +46,10 @@ const DIFFICULTY_CONFIG: Record<string, {
   },
   MEDIUM: {
     emoji: '🟡',
-    color: 'text-green-500',
+    color: 'text-yellow-500',
     points: '+2',
-    rarityBg: 'bg-green-50',
-    rarityBorder: 'border-green-400',
+    rarityBg: 'bg-yellow-50',
+    rarityBorder: 'border-yellow-400',
     rarityLabel: '中等',
     glowShadow: 'shadow-sm',
   },

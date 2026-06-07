@@ -192,6 +192,12 @@ export async function joinGame(data: {
         throw new AppError(400, '游戏人数已满');
       }
 
+      // 昵称格式校验
+      const trimmedNickname = data.nickname.trim();
+      if (!trimmedNickname || trimmedNickname.length > 10) {
+        throw new AppError(400, '昵称长度需在1-10个字符之间');
+      }
+
       // 检查同一IP是否已加入
       const existing = game.players.find((p) => p.clientIp === data.clientIp);
       if (existing) {

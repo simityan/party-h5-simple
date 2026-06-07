@@ -430,6 +430,12 @@ export async function confirmDeclare(
     throw new AppError(403, '只有目标方才能确认/否认');
   }
 
+  // 校验游戏状态（游戏已结束时不应再确认声明）
+  const game = await prisma.game.findUnique({ where: { id: declare.gameId } });
+  if (!game || game.status !== 'PLAYING') {
+    throw new AppError(400, '游戏已结束，无法确认声明');
+  }
+
   if (data.confirmed) {
     // ======= 目标方确认 → 声明方得分 =======
 
@@ -971,13 +977,17 @@ export async function refreshAllTasks(playerId: string) {
       });
     }
 
-    // 更新玩家极端任务统计
-    if (extremeCount > 0) {
-      await tx.player.update({
-        where: { id: playerId },
-        data: { extremeTasksDrawn: { increment: extremeCount } },
-      });
-    }
+    // 更新玩家统计（含 totalTasksDrawn，修复手气维度计算）
+    const currentTotalTasks = await tx.playerTask.count({
+      where: { playerId, gameId: player.gameId },
+    });
+    await tx.player.update({
+      where: { id: playerId },
+      data: {
+        totalTasksDrawn: currentTotalTasks,
+        ...(extremeCount > 0 ? { extremeTasksDrawn: { increment: extremeCount } } : {}),
+      },
+    });
   });
 
   // 重新获取玩家信息和新任务

@@ -47,10 +47,8 @@ export default function CreatePage() {
 
       // 2. 创建者自动加入游戏
       // TODO: 微信 OpenID 获取，当前先用模拟值
-      const openId = `mock_${Date.now()}`;
       const result = await joinGame({
         gameCode: game.code,
-        openId,
         nickname: nickname.trim(),
       });
 
