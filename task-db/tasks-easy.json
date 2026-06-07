@@ -1,0 +1,202 @@
+[
+  {
+    "content": "让目标玩家主动给你推荐一道菜并说出推荐理由",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家跟你分享一个最近看的剧/电影并说感受",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家夸你一个具体的优点超过3句",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家主动跟你搭话并问出关于另一个玩家的问题",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家主动给你讲一个他/她的糗事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家摸耳朵3秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家说出你五官最美的一个部位，并解释",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家跟你分享一首最近单曲循环的歌",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出你的全名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出“我很棒”这个词",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出他/她今天出门前做的最后一件事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出自己的全名两遍",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家用三个词描述你",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家告诉你他/她最近在追的一部剧/综艺",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家跟你玩一把剪刀石头布",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家和你对视超过5秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家说出他/她最想和你一起做的一件事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家跟你分享他/她今天最开心的一件事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家主动给你倒一次酒/饮料并说出理由",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家在对话中自然说出“你说得对”这句话",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家对你说“你真好”",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出他/她最近最想去的城市和理由",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出自己最想做的职业",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家在对话中提及你的家人",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家在聊天中自然提到一部电影的名字",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家猜你口袋里装了什么",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出一个他/她想玩的游戏",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家对着你大笑",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家喂你一口饮料/吃一口菜",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家说出你们第一次见面的场景和印象",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出他/她手机里最近拍的一张照片是什么",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出你最常用的一个口头禅",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家主动跟你碰拳或击掌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家说出他/她手机里存的你的备注名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家和你一起哼一首歌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家说出他/她冰箱里最奇怪的一样东西",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出自己最像的明星",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出自己最美的一个五官",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出伴侣/crush的优点",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家说出自己最想学的技能",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "阻止目标玩家与其它玩家碰杯2次（未阻止成功不计数）",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家跟另一名玩家的碰杯2次",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家夹正要夹的那盘菜2次",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家放下筷子2次",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家穿鞋2次",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "让目标玩家帮你把猫抱过来",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家提及在场所有人都认识的其他人",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "对目标玩家说一句你的方言并得到对方的方言回应",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家双手交叉环抱",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家站起来夹一次菜",
+    "taskType": "BEHAVIOR"
+  }
+]

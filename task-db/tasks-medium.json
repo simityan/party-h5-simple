@@ -1,0 +1,202 @@
+[
+  {
+    "content": "让目标玩家及次要玩家同时跟你碰杯",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相碰杯并各说一句不同的祝福语",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家各给你夹一筷子不同的菜",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家同时跟你玩剪刀石头布",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相喂对方一口菜",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家各用方言对你说一句祝福",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家各说出你全名并加一句评价",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家一起对视5秒不许笑",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相给对方夹同一个菜",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相说出对方的优点不少于3个",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家一起站起来喝一口酒/饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家都讲出跟你的首次见面",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家各自介绍一道自己的家乡菜",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相给对方起一个新昵称",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家各说出对方最让你佩服的一件事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相说出第一次见对方的印象",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家各说出一个对方最让你意外的反差",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相说出对方的全名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家一起哼唱一首歌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相给对方倒一杯酒/饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家同时用非惯用手喝一口饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家和你一起拍一张照片，仅三人照片",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家连续问你一个问题",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家背靠背站立10秒不许动",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家同时说出在场另一个玩家的同一个优点",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家说出自己的高考分数",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家各说一个关于对方的小秘密",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家说出自己最擅长的学科",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家跟你手拉手形成一个圈",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家跟你一起背对背",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享相册里的一张照片",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家用方言介绍桌上的一道菜",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家同时蹲下",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家相对大笑",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享在看的一本书",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享喜欢的一部电影",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享在看的一部电视剧",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享在追的一个综艺",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享在追的一个明星",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家分享喜欢的一个歌手",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "阻止目标玩家及次要玩家互相夹菜2次（未阻止成功不计数）",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家及次要玩家同时举杯2次（未阻止成功不计数）",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家及次要玩家猜拳1次",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家及次要玩家同时夹同一盘菜2次（未阻止成功不计数）",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "阻止目标玩家及次要玩家一起站起来2次（未阻止成功不计数）",
+    "taskType": "REVERSE"
+  },
+  {
+    "content": "让目标玩家及次要玩家和你一起完成一个三人击掌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家把头靠在另一人肩膀上超5秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家连续击掌3次",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家猜拳",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家互相比一个爱心给对方",
+    "taskType": "BEHAVIOR"
+  }
+]

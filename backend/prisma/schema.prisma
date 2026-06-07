@@ -1,0 +1,269 @@
+// ============================================
+// Party H5 Simple — Prisma Schema (V2)
+// 害你在心口难开·动作版 — 简化版（IP绑定用户，无鉴权）
+// ============================================
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Game {
+  id          String   @id @default(uuid())
+  code        String   @unique
+  status      GameStatus @default(WAITING)
+
+  playerCount Int      @default(6)
+  startTime   DateTime?
+  endTime     DateTime
+
+  teamRewards   Json @default("[]")
+  teamPunishments Json @default("[]")
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  startedAt   DateTime?
+  endedAt     DateTime?
+
+  players     Player[]
+  events      GameEvent[]
+  tips        AnonymousTip[]
+
+  @@map("games")
+}
+
+model Player {
+  id        String  @id @default(uuid())
+  gameId    String
+  game      Game    @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  clientIp  String  // IP替代OpenID，作为用户身份标识
+  nickname  String
+  avatar    String?
+
+  score     Int     @default(0)
+  isBottom2 Boolean @default(false)
+  votedEnd  Boolean @default(false)
+
+  refreshChances Int @default(3)
+
+  tasksCompleted     Int @default(0)
+  tasksDenied        Int @default(0)
+  challengesMade     Int @default(0)
+  challengesSucceeded Int @default(0)
+  challengesReceived Int @default(0)
+  challengesHit      Int @default(0)
+  timesTargeted      Int @default(0)
+  punishmentsReceived Int @default(0)
+  extremeTasksDrawn  Int @default(0)
+  totalTasksDrawn    Int @default(0)
+
+  joinedAt  DateTime @default(now())
+
+  tasks             PlayerTask[]
+  declareCompletions DeclareComplete[] @relation("Declarer")
+  targetCompletions  DeclareComplete[] @relation("Target")
+  challengesMade_rel Challenge[] @relation("Challenger")
+  challengesReceived_rel Challenge[] @relation("Challenged")
+  pendingMessages   PendingMessage[]
+
+  @@unique([gameId, clientIp])
+  @@index([gameId])
+  @@map("players")
+}
+
+model PlayerTask {
+  id        String  @id @default(uuid())
+  playerId  String
+  player    Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  gameId    String
+
+  content   String
+  difficulty TaskDifficulty
+  points    Int
+  taskType  String  @default("BEHAVIOR")
+
+  primaryTargetId   String
+  primaryTargetName String
+  secondaryTargetIds   Json @default("[]")
+  secondaryTargetNames Json @default("[]")
+
+  punishmentContent String
+
+  status    PlayerTaskStatus @default(ACTIVE)
+  declaredAt DateTime?
+
+  drawnAt   DateTime @default(now())
+  removedAt DateTime?
+
+  declareComplete DeclareComplete?
+  challengeHit    Challenge[]
+
+  @@index([playerId, status])
+  @@index([gameId, status])
+  @@map("player_tasks")
+}
+
+model DeclareComplete {
+  id          String  @id @default(uuid())
+  gameId      String
+  taskId      String  @unique
+  task        PlayerTask @relation(fields: [taskId], references: [id])
+
+  declarerId  String
+  declarer    Player  @relation("Declarer", fields: [declarerId], references: [id])
+  targetId    String
+  target      Player  @relation("Target", fields: [targetId], references: [id])
+
+  taskContent       String
+  punishmentContent String
+
+  status      ConfirmStatus @default(PENDING)
+  confirmedAt DateTime?
+
+  createdAt   DateTime @default(now())
+
+  @@map("declare_completions")
+}
+
+model Challenge {
+  id            String  @id @default(uuid())
+  gameId        String
+
+  challengerId  String
+  challenger    Player  @relation("Challenger", fields: [challengerId], references: [id])
+  challengedId  String
+  challenged    Player  @relation("Challenged", fields: [challengedId], references: [id])
+
+  guessContent  String
+
+  status        ChallengeStatus
+
+  similarityScore Float?
+  hitTaskId     String?  @unique
+  hitTask       PlayerTask? @relation(fields: [hitTaskId], references: [id], onDelete: SetNull)
+
+  hitTaskContent     String?
+  hitPunishmentContent String?
+
+  resolvedAt    DateTime?
+  createdAt     DateTime @default(now())
+
+  @@index([gameId])
+  @@index([challengerId])
+  @@index([challengedId])
+  @@map("challenges")
+}
+
+model GameEvent {
+  id        String     @id @default(uuid())
+  gameId    String
+  game      Game       @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  type      EventType
+  content   Json
+
+  createdAt DateTime   @default(now())
+
+  @@index([gameId])
+  @@map("game_events")
+}
+
+model AnonymousTip {
+  id            String  @id @default(uuid())
+  gameId        String
+  game          Game    @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  content       String
+  sourceTaskId  String?
+  isActive      Boolean @default(true)
+
+  createdAt     DateTime @default(now())
+
+  @@index([gameId, isActive])
+  @@map("anonymous_tips")
+}
+
+model PendingMessage {
+  id        String  @id @default(uuid())
+  playerId  String
+  player    Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  gameId    String
+
+  type      MessageType
+  relatedId String
+  content   Json
+
+  isRead    Boolean @default(false)
+  isHandled Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  handledAt DateTime?
+
+  @@index([playerId, isHandled])
+  @@index([gameId])
+  @@map("pending_messages")
+}
+
+model TaskLibrary {
+  id          String       @id @default(uuid())
+  difficulty  TaskDifficulty
+  content     String
+  taskType    String       @default("BEHAVIOR")
+
+  @@index([difficulty])
+  @@map("task_library")
+}
+
+model PunishmentLibrary {
+  id          String       @id @default(uuid())
+  difficulty  TaskDifficulty
+  content     String
+
+  @@index([difficulty])
+  @@map("punishment_library")
+}
+
+enum GameStatus {
+  WAITING
+  PLAYING
+  ENDED
+}
+
+enum TaskDifficulty {
+  EASY
+  MEDIUM
+  HARD
+  EXTREME
+}
+
+enum PlayerTaskStatus {
+  ACTIVE
+  COMPLETED
+  CHALLENGED
+  CANCELED
+}
+
+enum ConfirmStatus {
+  PENDING
+  CONFIRMED
+  DENIED
+}
+
+enum ChallengeStatus {
+  HIT
+  MISS
+}
+
+enum EventType {
+  COMPLETED
+  CHALLENGED
+}
+
+enum MessageType {
+  DECLARE_COMPLETE
+}

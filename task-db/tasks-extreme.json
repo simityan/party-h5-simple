@@ -1,0 +1,102 @@
+[
+  {
+    "content": "让所有玩家分别跟你碰杯并各说一句不同的祝福语",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别用方言给你说一句话",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让所有玩家分别给你夹一次菜",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别与你击掌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别抬脚一次",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别说出你的全名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让所有玩家分别跟你玩一次剪刀石头布",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别把手举过头顶一次",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别握住筷子或任意一样物品",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别摸一遍福宝尾巴",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别闭眼至少3秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别蹲下1次",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别同时碰杯",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别跟你对视超过3秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别拍一次手",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别给你倒一次酒/饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别给你递一次纸巾",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别换一次位置",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别拍一下桌子",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别给你发一条消息",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别比一次耶",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别跟全场最胖的人对话一次",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让所有玩家分别哼一首不同的歌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别摸一次鼻子",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让所有玩家分别说出自己的理想型",
+    "taskType": "VERBAL"
+  }
+]

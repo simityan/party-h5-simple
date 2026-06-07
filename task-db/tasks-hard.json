@@ -1,0 +1,202 @@
+[
+  {
+    "content": "让目标玩家及次要玩家们各给你推荐一道不同的菜并说出推荐理由",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自分享一部最近看的电影并说出感受",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们依次夸你不同的优点，每人至少3句且不许重复",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自问在场另一个人一个问题并得到回答",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各讲一个自己的糗事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们轮流评价你的穿搭",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出你五官最美的一个部位，不许重复",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们在你起的话题里都发表言论",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都说出在场任意一名玩家的全名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都对你说“爱你”",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自分享一个关于你的细节回忆",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们给你倒酒/饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们说出任意一名玩家首次见面的场合",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都说出同一个形容词",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们分别与你对视超过3秒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们互相给对方夹不同的菜并说出理由",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各说出一个对方最让自己佩服的事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们互相说出第一次见对方的印象",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都用手机给你发一条消息",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都给你比一个数字",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出最近单曲循环的一首歌",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们轮流说出对你最想和你一起做的一件事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出自己最想做的职业，不许重复",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们在对话中自然提到你的家人",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们聊一个不在场的人的话题超过30秒",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们分别对着你大笑",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们问你“要吃什么？”",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们喊你不同的昵称",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们用方言说“吃饭”",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们打开手机手电筒",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们展示一张相册照片",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出一个最近觉得最开心的事",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们依次跟你碰拳或击掌",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出手机里存你的备注名",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们分别和你一起哼一首歌，不许重复歌曲",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出自己最像的明星，不许重复",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出伴侣/crush的一个优点",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们都说出“咋了”/“怎么了”",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们同时摸福宝",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们同时举手",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出一个在场所有人都认识的其他人，不许重复",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自用方言说一句不同的祝福",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们互相给对方起一个新昵称并解释原因",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各分享一个自己最想学的技能",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们分别说出自己最想去的城市和理由",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们一起站起来喝一口酒/饮料",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们各自说出一个在场最不敢得罪的人并解释",
+    "taskType": "VERBAL"
+  },
+  {
+    "content": "让目标玩家及次要玩家们和你一起拍一张大合照",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们分别和你拥抱",
+    "taskType": "BEHAVIOR"
+  },
+  {
+    "content": "让目标玩家及次要玩家们展示自己的手机壁纸",
+    "taskType": "BEHAVIOR"
+  }
+]
